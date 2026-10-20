@@ -10,11 +10,11 @@ An MCP server that lets an AI agent run a photophysics experiment on an optics b
 
 ## The experiment
 
-The agent gets one question and the tools. No procedure, no hint:
+The agent gets one question and the tools, with no procedure:
 
 > The bench excites a photosensitiser with an 800 nm laser and records emission near 1270 nm. Determine experimentally whether this emission is excited by one-photon or two-photon absorption, and state your conclusion with its uncertainty.
 
-The answer is in the physics: signal scales as P^n, where n is the number of photons absorbed per excitation. The agent has to work that out, choose powers and integration times that keep the detector out of saturation, take the spectra, fit the peaks, fit the power law and conclude. The photon order is hidden in the server (`--photon-order`), so the same question has a right answer that differs between runs.
+The answer is in the physics: signal scales as P^n, where n is the number of photons absorbed per excitation. That rule is not the hard part, and the agent is not left to discover it: the fit tool's description says what an exponent of 1 or 2 means, and the tool returns a verdict from its own statistics. The agent has to choose powers and integration times that keep the detector out of saturation, take the spectra, fit the peaks, fit the power law and conclude. The photon order is hidden in the server (`--photon-order`), so the same question has a right answer that differs between runs.
 
 ## Results
 
@@ -25,7 +25,7 @@ Two runs, a local model (Qwen3.6-35B-A3B, Q4_K_M, llama.cpp on Vulkan on an AMD 
 | two-photon | 2.004 ± 0.03 (6 powers, 10–160 mW) | 28 | 91 s | correct |
 | one-photon (control) | 1.003 ± 0.002 (5 powers, 20–160 mW) | 32 | 84 s | correct |
 
-Both conclusions are right, and the control matters: it shows the agent reads the slope instead of reciting the "two-photon at 800 nm" answer the setup suggests.
+Both conclusions are right, and the control matters: with the truth hidden in the server, reciting the "two-photon at 800 nm" answer the setup suggests would have failed it. What the control shows is that the agent designed and ran a measurement good enough for the server's statistics to reach the right verdict; the verdict wording itself comes from the fit tool, and the agent repeated it. Design reasoning for every part of the server: [docs/DECISIONS.md](docs/DECISIONS.md).
 
 **What the agent got wrong.** The measurements and fits are sound; the closing physics is not, in both runs.
 
