@@ -1,5 +1,7 @@
 # photonics-lab-mcp
 
+[![tests](https://github.com/sadanbermudez/photonics-lab-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/sadanbermudez/photonics-lab-mcp/actions/workflows/ci.yml)
+
 An MCP server that lets an AI agent run a photophysics experiment on an optics bench: set laser power, arm and fire the laser, configure a spectrometer, acquire spectra, fit peaks and fit a power law. Safety limits are enforced in the server, not left to the model, and every action, including every refused one, goes into a lab notebook.
 
 **What is real and what is simulated.** The bench in this repo is a physics simulator: an 800 nm laser exciting a photosensitiser, with singlet-oxygen phosphorescence at 1270 nm read by a 512-pixel InGaAs spectrometer (Poisson shot noise, read noise, dark current, saturation). The tool surface, safety layer, analysis and notebook are the same code a real bench would use. A real instrument driver (Thorlabs PM100 power meter, SCPI over VISA) is included and tested against `pyvisa-sim`; it has not yet been run against hardware.
