@@ -1,0 +1,32 @@
+[project]
+name = "photonics-lab-mcp"
+version = "0.1.0"
+description = "An optics bench an AI agent can run experiments on, over the Model Context Protocol"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Sergio Adan Bermudez" }]
+dependencies = [
+    "mcp==1.30.0",
+    "numpy==2.4.6",
+    "scipy==1.17.1",
+    "matplotlib==3.11.2",
+]
+
+[project.optional-dependencies]
+visa = ["pyvisa==1.16.2", "pyvisa-sim==0.7.1"]
+test = ["pytest==9.1.1", "pyvisa==1.16.2", "pyvisa-sim==0.7.1"]
+
+[project.scripts]
+photonics-lab = "photonics_lab.server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

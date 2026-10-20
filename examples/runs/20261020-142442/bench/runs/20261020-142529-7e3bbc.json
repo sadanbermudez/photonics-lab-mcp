@@ -1,0 +1,8 @@
+{
+ "run_id": "20261020-142529-7e3bbc",
+ "label": "P30mW",
+ "power_mw": 30.0,
+ "emitting": true,
+ "integration_ms": 1000.0,
+ "averages": 1
+}
