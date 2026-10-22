@@ -68,8 +68,11 @@ def agent_verdict(text: str) -> str:
     t = re.sub(r"\b(?:two|2)[\s-]*photon", "two-photon", t)
     # rejected or hypothetical mentions: "excludes two-photon", "would indicate two-photon",
     # "if it were two-photon", "a two-photon process would give 2"
+    # "if it were two-photon", "excludes 1 (one-photon process)", "in a one-photon process, ..."
+    # (the last two forms were added after the 2026-10-22 batch, see docs/batch-eval.md)
     t = re.sub(r"\b(?:exclud\w*|rul\w*\s+out|reject\w*|not|rather\s+than|instead\s+of|inconsistent\s+with|"
-               r"versus|vs\.?|than|over|against|or|would|if)\s+(?:\w+\s+){0,3}?(one|two)-photon", " ", t)
+               r"versus|vs\.?|than|over|against|or|would|if|in\s+an?)\s+(?:\S+\s+){0,4}?\(?(one|two)-photon",
+               " ", t)
     t = re.sub(r"(one|two)-photon\s+(?:\w+\s+){0,3}?would\b", " ", t)
     one, two = "one-photon" in t, "two-photon" in t
     if one != two:

@@ -29,6 +29,15 @@ def test_verdict_ignores_rejected_and_hypothetical_orders():
     assert b.agent_verdict("**One-photon.** An exponent of 2 would indicate **two-photon** absorption.") == "one-photon"
     assert b.agent_verdict("The result is inconclusive.") == "inconclusive"
     assert b.agent_verdict("Both one-photon and two-photon fit.") == "unclear"
+    # phrasings from the 2026-10-22 batch that the first version read as unclear
+    assert b.agent_verdict("Consistent with **1.0** (one-photon absorption) and decisively excludes "
+                           "**2.0** (two-photon absorption).") == "one-photon"
+    assert b.agent_verdict("Excited by **two-photon absorption**. Consistent with 2 (two-photon process) "
+                           "and decisively excludes 1 (one-photon process).") == "two-photon"
+    assert b.agent_verdict("This is the signature of two-photon absorption. In a one-photon process, "
+                           "the emission scales linearly.") == "two-photon"
+    assert b.agent_verdict("Excited by one-photon absorption, rather than the simultaneous absorption "
+                           "of two photons.") == "one-photon"
 
 
 def test_harness_safe_state_is_not_credited_to_the_agent():
