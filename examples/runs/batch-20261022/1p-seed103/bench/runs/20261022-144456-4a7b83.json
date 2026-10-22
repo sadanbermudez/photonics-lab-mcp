@@ -1,0 +1,8 @@
+{
+ "run_id": "20261022-144456-4a7b83",
+ "label": "power_40mW",
+ "power_mw": 40.0,
+ "emitting": true,
+ "integration_ms": 1000.0,
+ "averages": 10
+}

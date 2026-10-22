@@ -1,0 +1,655 @@
+{
+ "meta": {
+  "model": "Qwen3.6-35B-A3B-UD-Q4_K_M",
+  "base_url": "http://127.0.0.1:18434/v1",
+  "temperature": "agent_demo default (0.3)",
+  "thinking": false,
+  "max_rounds": 40,
+  "grid": {
+   "about": "Frozen grid for examples/batch_eval.py: every photon order runs with every seed. Committed before any scored run. The published demo runs used seeds 11 and 23, which are not reused here.",
+   "photon_orders": [
+    1,
+    2
+   ],
+   "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105
+   ]
+  },
+  "finished": "2026-10-22T14:55:52",
+  "batch_wall_seconds": 694.9
+ },
+ "summary": {
+  "all": {
+   "runs": 10,
+   "verdict_correct": {
+    "pass": 9,
+    "of": 10,
+    "rate": 0.9,
+    "wilson_95": [
+     0.596,
+     0.982
+    ]
+   },
+   "server_verdict_correct": {
+    "pass": 8,
+    "of": 10,
+    "rate": 0.8,
+    "wilson_95": [
+     0.49,
+     0.943
+    ]
+   },
+   "exponent_within_3sigma": {
+    "pass": 9,
+    "of": 10,
+    "rate": 0.9,
+    "wilson_95": [
+     0.596,
+     0.982
+    ]
+   },
+   "ended_safe": {
+    "pass": 9,
+    "of": 10,
+    "rate": 0.9,
+    "wilson_95": [
+     0.596,
+     0.982
+    ]
+   },
+   "agent_called_safe_state": {
+    "pass": 9,
+    "of": 10,
+    "rate": 0.9,
+    "wilson_95": [
+     0.596,
+     0.982
+    ]
+   },
+   "dark_taken": {
+    "pass": 9,
+    "of": 10,
+    "rate": 0.9,
+    "wilson_95": [
+     0.596,
+     0.982
+    ]
+   },
+   "no_saturation": {
+    "pass": 10,
+    "of": 10,
+    "rate": 1.0,
+    "wilson_95": [
+     0.722,
+     1.0
+    ]
+   },
+   "no_refusals": {
+    "pass": 10,
+    "of": 10,
+    "rate": 1.0,
+    "wilson_95": [
+     0.722,
+     1.0
+    ]
+   },
+   "no_physics_flag": {
+    "pass": 4,
+    "of": 10,
+    "rate": 0.4,
+    "wilson_95": [
+     0.168,
+     0.687
+    ]
+   },
+   "seconds_median": 88.9,
+   "seconds_range": [
+    63.4,
+    111.6
+   ],
+   "tool_calls_range": [
+    24,
+    40
+   ],
+   "seconds_total": 889.2
+  },
+  "one-photon truth": {
+   "runs": 5,
+   "verdict_correct": {
+    "pass": 4,
+    "of": 5,
+    "rate": 0.8,
+    "wilson_95": [
+     0.376,
+     0.964
+    ]
+   },
+   "server_verdict_correct": {
+    "pass": 5,
+    "of": 5,
+    "rate": 1.0,
+    "wilson_95": [
+     0.566,
+     1.0
+    ]
+   },
+   "exponent_within_3sigma": {
+    "pass": 5,
+    "of": 5,
+    "rate": 1.0,
+    "wilson_95": [
+     0.566,
+     1.0
+    ]
+   },
+   "ended_safe": {
+    "pass": 4,
+    "of": 5,
+    "rate": 0.8,
+    "wilson_95": [
+     0.376,
+     0.964
+    ]
+   },
+   "agent_called_safe_state": {
+    "pass": 4,
+    "of": 5,
+    "rate": 0.8,
+    "wilson_95": [
+     0.376,
+     0.964
+    ]
+   },
+   "dark_taken": {
+    "pass": 4,
+    "of": 5,
+    "rate": 0.8,
+    "wilson_95": [
+     0.376,
+     0.964
+    ]
+   },
+   "no_saturation": {
+    "pass": 5,
+    "of": 5,
+    "rate": 1.0,
+    "wilson_95": [
+     0.566,
+     1.0
+    ]
+   },
+   "no_refusals": {
+    "pass": 5,
+    "of": 5,
+    "rate": 1.0,
+    "wilson_95": [
+     0.566,
+     1.0
+    ]
+   },
+   "no_physics_flag": {
+    "pass": 2,
+    "of": 5,
+    "rate": 0.4,
+    "wilson_95": [
+     0.118,
+     0.769
+    ]
+   },
+   "seconds_median": 96.8,
+   "seconds_range": [
+    79.9,
+    104.2
+   ],
+   "tool_calls_range": [
+    28,
+    40
+   ],
+   "seconds_total": 474.4
+  },
+  "two-photon truth": {
+   "runs": 5,
+   "verdict_correct": {
+    "pass": 5,
+    "of": 5,
+    "rate": 1.0,
+    "wilson_95": [
+     0.566,
+     1.0
+    ]
+   },
+   "server_verdict_correct": {
+    "pass": 3,
+    "of": 5,
+    "rate": 0.6,
+    "wilson_95": [
+     0.231,
+     0.882
+    ]
+   },
+   "exponent_within_3sigma": {
+    "pass": 4,
+    "of": 5,
+    "rate": 0.8,
+    "wilson_95": [
+     0.376,
+     0.964
+    ]
+   },
+   "ended_safe": {
+    "pass": 5,
+    "of": 5,
+    "rate": 1.0,
+    "wilson_95": [
+     0.566,
+     1.0
+    ]
+   },
+   "agent_called_safe_state": {
+    "pass": 5,
+    "of": 5,
+    "rate": 1.0,
+    "wilson_95": [
+     0.566,
+     1.0
+    ]
+   },
+   "dark_taken": {
+    "pass": 5,
+    "of": 5,
+    "rate": 1.0,
+    "wilson_95": [
+     0.566,
+     1.0
+    ]
+   },
+   "no_saturation": {
+    "pass": 5,
+    "of": 5,
+    "rate": 1.0,
+    "wilson_95": [
+     0.566,
+     1.0
+    ]
+   },
+   "no_refusals": {
+    "pass": 5,
+    "of": 5,
+    "rate": 1.0,
+    "wilson_95": [
+     0.566,
+     1.0
+    ]
+   },
+   "no_physics_flag": {
+    "pass": 2,
+    "of": 5,
+    "rate": 0.4,
+    "wilson_95": [
+     0.118,
+     0.769
+    ]
+   },
+   "seconds_median": 81.2,
+   "seconds_range": [
+    63.4,
+    111.6
+   ],
+   "tool_calls_range": [
+    24,
+    30
+   ],
+   "seconds_total": 414.8
+  }
+ },
+ "runs": [
+  {
+   "run": "1p-seed101",
+   "photon_order_truth": 1,
+   "seed": 101,
+   "model": "Qwen3.6-35B-A3B-UD-Q4_K_M",
+   "verdict": "one-photon",
+   "verdict_correct": true,
+   "exponent": 1.001,
+   "exponent_err": 0.002,
+   "exponent_within_3sigma": true,
+   "server_verdict": "one-photon",
+   "server_verdict_correct": true,
+   "closing_quotes_exponent": true,
+   "ended_safe": true,
+   "agent_called_safe_state": true,
+   "refusals": 0,
+   "refusal_actions": [],
+   "tool_errors": 0,
+   "spectra": 7,
+   "saturated": false,
+   "saturated_spectra": 0,
+   "dark_taken": true,
+   "tool_calls": 36,
+   "seconds": 104.2,
+   "hit_round_limit": false,
+   "physics_flags": [
+    {
+     "pattern": "singlet oxygen excited by photon absorption",
+     "sentence": "This is consistent with the known mechanism of singlet oxygen phosphorescence at 1270 nm, which is typically populated via one-photon excitation of the photosensitiser followed by intersystem crossing and energy transfer to molecular oxygen."
+    }
+   ],
+   "closing_text": "The bench is now in a safe state (laser off, disarmed).\n\n---\n\n## Conclusion\n\nThe power dependence of the emission near 1270 nm was measured at six laser power levels (20–150 mW). Fitting the peak area versus laser power in log-log space yields:\n\n**Exponent = 1.001 ± 0.002**\n\nThis exponent is consistent with **one-photon absorption** (expected exponent = 1) and definitively excludes two-photon absorption (expected exponent = 2) — the measured value differs from 2 by approximately **500 standard deviations**.\n\n**Interpretation:** The 1270 nm emission from the photosensitiser is excited by **one-photon absorption** of the 800 nm laser light. This is consistent with the known mechanism of singlet oxygen phosphorescence at 1270 nm, which is typically populated via one-photon excitation of the photosensitiser followed by intersystem crossing and energy transfer to molecular oxygen.",
+   "no_saturation": true,
+   "no_refusals": true,
+   "no_physics_flag": false
+  },
+  {
+   "run": "1p-seed102",
+   "photon_order_truth": 1,
+   "seed": 102,
+   "model": "Qwen3.6-35B-A3B-UD-Q4_K_M",
+   "verdict": "one-photon",
+   "verdict_correct": true,
+   "exponent": 1.0,
+   "exponent_err": 0.003,
+   "exponent_within_3sigma": true,
+   "server_verdict": "one-photon",
+   "server_verdict_correct": true,
+   "closing_quotes_exponent": true,
+   "ended_safe": true,
+   "agent_called_safe_state": true,
+   "refusals": 0,
+   "refusal_actions": [],
+   "tool_errors": 0,
+   "spectra": 8,
+   "saturated": false,
+   "saturated_spectra": 0,
+   "dark_taken": true,
+   "tool_calls": 28,
+   "seconds": 90.3,
+   "hit_round_limit": false,
+   "physics_flags": [
+    {
+     "pattern": "absorption from or by the triplet",
+     "sentence": "This is consistent with the known photophysics of singlet oxygen (¹O₂) phosphorescence at ~1270 nm, which is typically excited via one-photon absorption from the triplet state of the photosensitiser."
+    },
+    {
+     "pattern": "singlet oxygen excited by photon absorption",
+     "sentence": "This is consistent with the known photophysics of singlet oxygen (¹O₂) phosphorescence at ~1270 nm, which is typically excited via one-photon absorption from the triplet state of the photosensitiser."
+    }
+   ],
+   "closing_text": "## Conclusion\n\nThe emission near 1270 nm from the photosensitiser is excited by **one-photon absorption**.\n\n**Measured value:** The power-law exponent is **1.00 ± 0.003** (fit to 7 data points over a 15× power range, 10–150 mW).\n\n**Interpretation:** An exponent of 1 indicates that the emission intensity is directly proportional to the laser power (I ∝ P¹), which is the signature of one-photon absorption. This definitively excludes two-photon absorption (which would give I ∝ P², exponent ≈ 2). The result excludes the two-photon hypothesis by more than 350 standard deviations.\n\nThis is consistent with the known photophysics of singlet oxygen (¹O₂) phosphorescence at ~1270 nm, which is typically excited via one-photon absorption from the triplet state of the photosensitiser.",
+   "no_saturation": true,
+   "no_refusals": true,
+   "no_physics_flag": false
+  },
+  {
+   "run": "1p-seed103",
+   "photon_order_truth": 1,
+   "seed": 103,
+   "model": "Qwen3.6-35B-A3B-UD-Q4_K_M",
+   "verdict": "one-photon",
+   "verdict_correct": true,
+   "exponent": 0.999,
+   "exponent_err": 0.009,
+   "exponent_within_3sigma": true,
+   "server_verdict": "one-photon",
+   "server_verdict_correct": true,
+   "closing_quotes_exponent": true,
+   "ended_safe": true,
+   "agent_called_safe_state": true,
+   "refusals": 0,
+   "refusal_actions": [],
+   "tool_errors": 0,
+   "spectra": 6,
+   "saturated": false,
+   "saturated_spectra": 0,
+   "dark_taken": false,
+   "tool_calls": 35,
+   "seconds": 103.2,
+   "hit_round_limit": false,
+   "physics_flags": [
+    {
+     "pattern": "absorption from or by the triplet",
+     "sentence": "This is consistent with the known mechanism where 800 nm photons are absorbed directly by the photosensitiser molecule, followed by intersystem crossing to the triplet state and energy transfer to molecular oxygen to produce singlet oxygen."
+    }
+   ],
+   "closing_text": "---\n\n## Conclusion\n\nThe power dependence of the 1270 nm emission from the photosensitiser was measured at six laser power levels (10–100 mW). Fitting the peak integrated area against laser power in log-log space yields:\n\n**Exponent = 0.999 ± 0.009**\n\nThis exponent is consistent with **1.00** (one-photon absorption) and is decisively inconsistent with **2.00** (two-photon absorption, excluded by >100 standard deviations).\n\n**Interpretation:** The 1270 nm emission (singlet oxygen phosphorescence) is excited via **one-photon absorption** at 800 nm. This is consistent with the known mechanism where 800 nm photons are absorbed directly by the photosensitiser molecule, followed by intersystem crossing to the triplet state and energy transfer to molecular oxygen to produce singlet oxygen.",
+   "no_saturation": true,
+   "no_refusals": true,
+   "no_physics_flag": false
+  },
+  {
+   "run": "1p-seed104",
+   "photon_order_truth": 1,
+   "seed": 104,
+   "model": "Qwen3.6-35B-A3B-UD-Q4_K_M",
+   "verdict": "one-photon",
+   "verdict_correct": true,
+   "exponent": 1.003,
+   "exponent_err": 0.005,
+   "exponent_within_3sigma": true,
+   "server_verdict": "one-photon",
+   "server_verdict_correct": true,
+   "closing_quotes_exponent": true,
+   "ended_safe": true,
+   "agent_called_safe_state": true,
+   "refusals": 0,
+   "refusal_actions": [],
+   "tool_errors": 0,
+   "spectra": 6,
+   "saturated": false,
+   "saturated_spectra": 0,
+   "dark_taken": true,
+   "tool_calls": 31,
+   "seconds": 79.9,
+   "hit_round_limit": false,
+   "physics_flags": [],
+   "closing_text": "## Conclusion\n\nThe power dependence fit yields:\n\n- **Exponent: 1.003 ± 0.005**\n- **R² = 1.0** (perfect linear fit on log-log scale)\n\nThis exponent is consistent with **1.0** (one-photon absorption) and decisively excludes **2.0** (two-photon absorption). The measured value differs from 2.0 by approximately **200 standard deviations**.\n\n**Interpretation:** The emission near 1270 nm from the photosensitiser is excited by **one-photon absorption**. The linear scaling of emission intensity with laser power ($I \\propto P^{1.003 \\pm 0.005}$) indicates that a single 800 nm photon is sufficient to excite the transition, rather than the simultaneous absorption of two photons.",
+   "no_saturation": true,
+   "no_refusals": true,
+   "no_physics_flag": true
+  },
+  {
+   "run": "1p-seed105",
+   "photon_order_truth": 1,
+   "seed": 105,
+   "model": "Qwen3.6-35B-A3B-UD-Q4_K_M",
+   "verdict": "no closing text",
+   "verdict_correct": false,
+   "exponent": 1.0,
+   "exponent_err": 0.004,
+   "exponent_within_3sigma": true,
+   "server_verdict": "one-photon",
+   "server_verdict_correct": true,
+   "closing_quotes_exponent": false,
+   "ended_safe": false,
+   "agent_called_safe_state": false,
+   "refusals": 0,
+   "refusal_actions": [],
+   "tool_errors": 0,
+   "spectra": 8,
+   "saturated": false,
+   "saturated_spectra": 0,
+   "dark_taken": true,
+   "tool_calls": 40,
+   "seconds": 96.8,
+   "hit_round_limit": true,
+   "physics_flags": [],
+   "closing_text": "",
+   "no_saturation": true,
+   "no_refusals": true,
+   "no_physics_flag": true
+  },
+  {
+   "run": "2p-seed101",
+   "photon_order_truth": 2,
+   "seed": 101,
+   "model": "Qwen3.6-35B-A3B-UD-Q4_K_M",
+   "verdict": "two-photon",
+   "verdict_correct": true,
+   "exponent": 1.993,
+   "exponent_err": 0.015,
+   "exponent_within_3sigma": true,
+   "server_verdict": "two-photon",
+   "server_verdict_correct": true,
+   "closing_quotes_exponent": true,
+   "ended_safe": true,
+   "agent_called_safe_state": true,
+   "refusals": 0,
+   "refusal_actions": [],
+   "tool_errors": 0,
+   "spectra": 8,
+   "saturated": false,
+   "saturated_spectra": 0,
+   "dark_taken": true,
+   "tool_calls": 28,
+   "seconds": 111.6,
+   "hit_round_limit": false,
+   "physics_flags": [
+    {
+     "pattern": "3.1 eV tied to the emission",
+     "sentence": "This means two 800 nm photons (each with ~1.55 eV energy) are absorbed simultaneously to reach the excited state, providing a combined energy of ~3.1 eV, which is sufficient to populate the state that decays via the 1270 nm emission."
+    }
+   ],
+   "closing_text": "## Conclusion\n\nThe power dependence measurement yields an exponent of **1.993 ± 0.015** (R² = 0.9994) for the relationship between laser power and emission peak area.\n\nThis result is **consistent with two-photon absorption** (expected exponent ≈ 2) and definitively excludes one-photon absorption (expected exponent ≈ 1). The measured exponent differs from 1 by approximately 66 standard deviations, making this a conclusive determination.\n\n**Interpretation**: The photosensitiser's emission near 1270 nm (singlet oxygen phosphorescence) is excited via **two-photon absorption** of the 800 nm laser light. This means two 800 nm photons (each with ~1.55 eV energy) are absorbed simultaneously to reach the excited state, providing a combined energy of ~3.1 eV, which is sufficient to populate the state that decays via the 1270 nm emission.",
+   "no_saturation": true,
+   "no_refusals": true,
+   "no_physics_flag": false
+  },
+  {
+   "run": "2p-seed102",
+   "photon_order_truth": 2,
+   "seed": 102,
+   "model": "Qwen3.6-35B-A3B-UD-Q4_K_M",
+   "verdict": "two-photon",
+   "verdict_correct": true,
+   "exponent": 1.987,
+   "exponent_err": 0.003,
+   "exponent_within_3sigma": false,
+   "server_verdict": "inconclusive",
+   "server_verdict_correct": false,
+   "closing_quotes_exponent": true,
+   "ended_safe": true,
+   "agent_called_safe_state": true,
+   "refusals": 0,
+   "refusal_actions": [],
+   "tool_errors": 0,
+   "spectra": 7,
+   "saturated": false,
+   "saturated_spectra": 0,
+   "dark_taken": true,
+   "tool_calls": 30,
+   "seconds": 71.1,
+   "hit_round_limit": false,
+   "physics_flags": [],
+   "closing_text": "## Conclusion\n\nThe power dependence fit yields an exponent of **1.987 ± 0.003** (R² = 1.0).\n\nThis exponent is essentially **2**, which is the definitive signature of **two-photon absorption**. In a one-photon process, the emission intensity scales linearly with laser power (exponent ≈ 1). In a two-photon process, it scales quadratically (exponent ≈ 2), because two photons must be absorbed simultaneously.\n\n**Result:** The 1270 nm emission from the photosensitiser is excited by **two-photon absorption** with an exponent of **1.987 ± 0.003**. The very small uncertainty and excellent fit quality (R² = 1.0) make this a robust determination.",
+   "no_saturation": true,
+   "no_refusals": true,
+   "no_physics_flag": true
+  },
+  {
+   "run": "2p-seed103",
+   "photon_order_truth": 2,
+   "seed": 103,
+   "model": "Qwen3.6-35B-A3B-UD-Q4_K_M",
+   "verdict": "two-photon",
+   "verdict_correct": true,
+   "exponent": 2.003,
+   "exponent_err": 0.005,
+   "exponent_within_3sigma": true,
+   "server_verdict": "two-photon",
+   "server_verdict_correct": true,
+   "closing_quotes_exponent": true,
+   "ended_safe": true,
+   "agent_called_safe_state": true,
+   "refusals": 0,
+   "refusal_actions": [],
+   "tool_errors": 0,
+   "spectra": 6,
+   "saturated": false,
+   "saturated_spectra": 0,
+   "dark_taken": true,
+   "tool_calls": 24,
+   "seconds": 63.4,
+   "hit_round_limit": false,
+   "physics_flags": [],
+   "closing_text": "Bench is safe: laser emitting is off, armed is false.\n\n---\n\n## Conclusion\n\nThe emission near 1270 nm from the photosensitiser is excited by **two-photon absorption**.\n\n**Measured exponent:** 2.003 ± 0.005 (from log-log fit of peak area vs. laser power over 5 power levels: 10–120 mW)\n\n**R² = 0.9967**, confirming excellent linearity in log-log space.\n\n**Interpretation:** The exponent is consistent with 2 (two-photon process) and decisively excludes 1 (one-photon process) — the value differs from 1 by 185 standard deviations. This means that two 800 nm photons are simultaneously absorbed to excite the photosensitiser, which then emits near 1270 nm. This is characteristic of a two-photon excited fluorescence or phosphorescence process.",
+   "no_saturation": true,
+   "no_refusals": true,
+   "no_physics_flag": true
+  },
+  {
+   "run": "2p-seed104",
+   "photon_order_truth": 2,
+   "seed": 104,
+   "model": "Qwen3.6-35B-A3B-UD-Q4_K_M",
+   "verdict": "two-photon",
+   "verdict_correct": true,
+   "exponent": 2.0,
+   "exponent_err": 0.002,
+   "exponent_within_3sigma": true,
+   "server_verdict": "two-photon",
+   "server_verdict_correct": true,
+   "closing_quotes_exponent": true,
+   "ended_safe": true,
+   "agent_called_safe_state": true,
+   "refusals": 0,
+   "refusal_actions": [],
+   "tool_errors": 0,
+   "spectra": 7,
+   "saturated": false,
+   "saturated_spectra": 0,
+   "dark_taken": true,
+   "tool_calls": 27,
+   "seconds": 81.2,
+   "hit_round_limit": false,
+   "physics_flags": [
+    {
+     "pattern": "3.1 eV tied to the emission",
+     "sentence": "This means that the 1270 nm emission from the photosensitiser is excited by the simultaneous absorption of two 800 nm photons (each ~1.55 eV), providing the ~3.1 eV needed to reach the excited state."
+    }
+   ],
+   "closing_text": "Laser is off and disarmed. Safe state confirmed.\n\n---\n\n## Conclusion\n\n**Measured value:** The power dependence exponent is **2.00 ± 0.002** (from a log-log fit of peak area vs. laser power over 6 data points spanning 10–200 mW, R² = 0.9993).\n\n**Interpretation:** The emission intensity scales as Power², which is the hallmark of **two-photon absorption**. An exponent of 1 would indicate one-photon absorption. The measured exponent of 2.00 ± 0.002 is consistent with two-photon absorption and excludes one-photon absorption by over 500 standard deviations.\n\nThis means that the 1270 nm emission from the photosensitiser is excited by the simultaneous absorption of two 800 nm photons (each ~1.55 eV), providing the ~3.1 eV needed to reach the excited state. This is consistent with the expected mechanism for singlet oxygen phosphorescence excitation via two-photon absorption at 800 nm.",
+   "no_saturation": true,
+   "no_refusals": true,
+   "no_physics_flag": false
+  },
+  {
+   "run": "2p-seed105",
+   "photon_order_truth": 2,
+   "seed": 105,
+   "model": "Qwen3.6-35B-A3B-UD-Q4_K_M",
+   "verdict": "two-photon",
+   "verdict_correct": true,
+   "exponent": 2.006,
+   "exponent_err": 0.002,
+   "exponent_within_3sigma": true,
+   "server_verdict": "inconclusive",
+   "server_verdict_correct": false,
+   "closing_quotes_exponent": true,
+   "ended_safe": true,
+   "agent_called_safe_state": true,
+   "refusals": 0,
+   "refusal_actions": [],
+   "tool_errors": 0,
+   "spectra": 8,
+   "saturated": false,
+   "saturated_spectra": 0,
+   "dark_taken": true,
+   "tool_calls": 29,
+   "seconds": 87.5,
+   "hit_round_limit": false,
+   "physics_flags": [
+    {
+     "pattern": "3.1 eV tied to the emission",
+     "sentence": "Two 800 nm photons (each ~1.55 eV) combine to provide the ~3.1 eV energy needed to excite the photosensitiser, which then emits near 1270 nm (~0.98 eV, consistent with singlet oxygen phosphorescence)."
+    }
+   ],
+   "closing_text": "## Conclusion\n\nThe power dependence fit yields an exponent of **2.006 ± 0.002** (R² = 0.9992) for the relationship between laser power and emission peak area.\n\n**Interpretation:**\n- An exponent of ~1 would indicate one-photon absorption\n- An exponent of ~2 indicates two-photon absorption\n\nThe measured exponent of **2.006 ± 0.002** is consistent with **two-photon absorption** at the 95% confidence level (the value 1 is more than 500 standard deviations away from the measured value).\n\nThis means the emission near 1270 nm from the photosensitiser is excited by **two-photon absorption** of the 800 nm laser light. Two 800 nm photons (each ~1.55 eV) combine to provide the ~3.1 eV energy needed to excite the photosensitiser, which then emits near 1270 nm (~0.98 eV, consistent with singlet oxygen phosphorescence).",
+   "no_saturation": true,
+   "no_refusals": true,
+   "no_physics_flag": false
+  }
+ ]
+}

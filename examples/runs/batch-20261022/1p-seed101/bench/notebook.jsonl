@@ -1,0 +1,42 @@
+{"t": "2026-10-22T14:41:01", "action": "configure", "ok": true, "integration_ms": 1000.0, "averages": 5}
+{"t": "2026-10-22T14:41:02", "action": "acquire", "ok": true, "run_id": "20261022-144102-19eee3", "label": "dark_spectrum", "power_mw": 0.0, "integration_ms": 1000.0, "averages": 5, "max_counts": 1875.8, "saturated_pixels": 0}
+{"t": "2026-10-22T14:41:05", "action": "arm", "ok": true}
+{"t": "2026-10-22T14:41:07", "action": "set_power", "ok": true, "power_mw": 20.0}
+{"t": "2026-10-22T14:41:09", "action": "emission", "ok": true, "on": true, "power_mw": 20.0}
+{"t": "2026-10-22T14:41:10", "action": "acquire", "ok": true, "run_id": "20261022-144110-807227", "label": "power_20mW", "power_mw": 20.0, "integration_ms": 1000.0, "averages": 5, "max_counts": 2198.1, "saturated_pixels": 0}
+{"t": "2026-10-22T14:41:13", "action": "emission", "ok": true, "on": false, "power_mw": 20.0}
+{"t": "2026-10-22T14:41:14", "action": "set_power", "ok": true, "power_mw": 40.0}
+{"t": "2026-10-22T14:41:15", "action": "emission", "ok": true, "on": true, "power_mw": 40.0}
+{"t": "2026-10-22T14:41:17", "action": "acquire", "ok": true, "run_id": "20261022-144117-de96f0", "label": "power_40mW", "power_mw": 40.0, "integration_ms": 1000.0, "averages": 5, "max_counts": 2553.9, "saturated_pixels": 0}
+{"t": "2026-10-22T14:41:19", "action": "emission", "ok": true, "on": false, "power_mw": 40.0}
+{"t": "2026-10-22T14:41:20", "action": "set_power", "ok": true, "power_mw": 60.0}
+{"t": "2026-10-22T14:41:21", "action": "emission", "ok": true, "on": true, "power_mw": 60.0}
+{"t": "2026-10-22T14:41:23", "action": "acquire", "ok": true, "run_id": "20261022-144123-d75d20", "label": "power_60mW", "power_mw": 60.0, "integration_ms": 1000.0, "averages": 5, "max_counts": 2941.4, "saturated_pixels": 0}
+{"t": "2026-10-22T14:41:24", "action": "emission", "ok": true, "on": false, "power_mw": 60.0}
+{"t": "2026-10-22T14:41:26", "action": "set_power", "ok": true, "power_mw": 80.0}
+{"t": "2026-10-22T14:41:27", "action": "emission", "ok": true, "on": true, "power_mw": 80.0}
+{"t": "2026-10-22T14:41:29", "action": "acquire", "ok": true, "run_id": "20261022-144129-b8213b", "label": "power_80mW", "power_mw": 80.0, "integration_ms": 1000.0, "averages": 5, "max_counts": 3355.7, "saturated_pixels": 0}
+{"t": "2026-10-22T14:41:31", "action": "emission", "ok": true, "on": false, "power_mw": 80.0}
+{"t": "2026-10-22T14:41:32", "action": "set_power", "ok": true, "power_mw": 100.0}
+{"t": "2026-10-22T14:41:34", "action": "emission", "ok": true, "on": true, "power_mw": 100.0}
+{"t": "2026-10-22T14:41:35", "action": "acquire", "ok": true, "run_id": "20261022-144135-f2b7a2", "label": "power_100mW", "power_mw": 100.0, "integration_ms": 1000.0, "averages": 5, "max_counts": 3765.5, "saturated_pixels": 0}
+{"t": "2026-10-22T14:41:38", "action": "emission", "ok": true, "on": false, "power_mw": 100.0}
+{"t": "2026-10-22T14:41:39", "action": "set_power", "ok": true, "power_mw": 150.0}
+{"t": "2026-10-22T14:41:41", "action": "emission", "ok": true, "on": true, "power_mw": 150.0}
+{"t": "2026-10-22T14:41:42", "action": "acquire", "ok": true, "run_id": "20261022-144142-7b7d7d", "label": "power_150mW", "power_mw": 150.0, "integration_ms": 1000.0, "averages": 5, "max_counts": 4734.9, "saturated_pixels": 0}
+{"t": "2026-10-22T14:41:50", "action": "analyse_peak", "ok": true, "run_id": "20261022-144110-807227", "center_nm": 1270.13, "fwhm_nm": 18.14, "area_counts_nm": 6762.1, "snr": 36.1, "saturated": false}
+{"t": "2026-10-22T14:41:53", "action": "analyse_peak", "ok": true, "run_id": "20261022-144117-de96f0", "center_nm": 1269.98, "fwhm_nm": 18.02, "area_counts_nm": 13763.7, "snr": 72.5, "saturated": false}
+{"t": "2026-10-22T14:41:56", "action": "analyse_peak", "ok": true, "run_id": "20261022-144123-d75d20", "center_nm": 1270.07, "fwhm_nm": 17.87, "area_counts_nm": 20583.0, "snr": 109.0, "saturated": false}
+{"t": "2026-10-22T14:41:59", "action": "analyse_peak", "ok": true, "run_id": "20261022-144129-b8213b", "center_nm": 1270.03, "fwhm_nm": 17.86, "area_counts_nm": 27397.5, "snr": 139.3, "saturated": false}
+{"t": "2026-10-22T14:42:02", "action": "analyse_peak", "ok": true, "run_id": "20261022-144135-f2b7a2", "center_nm": 1270.0, "fwhm_nm": 17.71, "area_counts_nm": 34238.5, "snr": 187.0, "saturated": false}
+{"t": "2026-10-22T14:42:05", "action": "analyse_peak", "ok": true, "run_id": "20261022-144142-7b7d7d", "center_nm": 1270.0, "fwhm_nm": 17.91, "area_counts_nm": 51429.6, "snr": 245.7, "saturated": false}
+{"t": "2026-10-22T14:42:15", "action": "analyse_peak", "ok": true, "run_id": "20261022-144110-807227", "center_nm": 1270.13, "fwhm_nm": 18.14, "area_counts_nm": 6762.1, "snr": 36.1, "saturated": false}
+{"t": "2026-10-22T14:42:15", "action": "analyse_peak", "ok": true, "run_id": "20261022-144117-de96f0", "center_nm": 1269.98, "fwhm_nm": 18.02, "area_counts_nm": 13763.7, "snr": 72.5, "saturated": false}
+{"t": "2026-10-22T14:42:15", "action": "analyse_peak", "ok": true, "run_id": "20261022-144123-d75d20", "center_nm": 1270.07, "fwhm_nm": 17.87, "area_counts_nm": 20583.0, "snr": 109.0, "saturated": false}
+{"t": "2026-10-22T14:42:15", "action": "analyse_peak", "ok": true, "run_id": "20261022-144129-b8213b", "center_nm": 1270.03, "fwhm_nm": 17.86, "area_counts_nm": 27397.5, "snr": 139.3, "saturated": false}
+{"t": "2026-10-22T14:42:15", "action": "analyse_peak", "ok": true, "run_id": "20261022-144135-f2b7a2", "center_nm": 1270.0, "fwhm_nm": 17.71, "area_counts_nm": 34238.5, "snr": 187.0, "saturated": false}
+{"t": "2026-10-22T14:42:15", "action": "analyse_peak", "ok": true, "run_id": "20261022-144142-7b7d7d", "center_nm": 1270.0, "fwhm_nm": 17.91, "area_counts_nm": 51429.6, "snr": 245.7, "saturated": false}
+{"t": "2026-10-22T14:42:15", "action": "fit_power_dependence", "ok": true, "exponent": 1.001, "exponent_err": 0.002, "runs": 6, "excluded": []}
+{"t": "2026-10-22T14:42:20", "action": "emission", "ok": true, "on": false, "power_mw": 150.0}
+{"t": "2026-10-22T14:42:21", "action": "safe_state", "ok": true, "reason": "Experiment complete - power dependence measurement finished"}
+{"t": "2026-10-22T14:42:27", "action": "safe_state", "ok": true, "reason": "demo harness end"}
