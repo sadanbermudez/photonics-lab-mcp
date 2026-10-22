@@ -39,8 +39,9 @@ def chat(base_url: str, key: str, model: str, messages: list, tools: list) -> di
         return json.load(r)
 
 
-async def main(a) -> int:
-    out = Path(__file__).parent / "runs" / time.strftime("%Y%m%d-%H%M%S")
+async def main(a, out: Path | None = None) -> int:
+    # batch_eval.py passes its own folder per run; the CLI keeps the timestamped default
+    out = out or Path(__file__).parent / "runs" / time.strftime("%Y%m%d-%H%M%S")
     out.mkdir(parents=True)
     key = Path(a.key_file).read_text(encoding="utf-8").strip() if a.key_file else ""
     server = StdioServerParameters(command=sys.executable, args=[
