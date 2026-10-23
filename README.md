@@ -32,7 +32,9 @@ Both conclusions are right, and the control matters: with the truth hidden in th
 - Two-photon run: it took no dark spectrum, and it explained the result as "consistent with the ~3.1 eV energy gap to the singlet oxygen emission". The 3.1 eV is the sensitiser's excitation; the 1270 nm emission is 0.98 eV, and the energy reaches oxygen by transfer from the sensitiser's triplet.
 - Control run: it said singlet oxygen is "typically excited via one-photon absorption from the triplet state". Singlet oxygen is produced by energy transfer from the sensitiser triplet, not by absorption; the photon order describes how the sensitiser is excited.
 
-So the agent is a reliable operator and a careless interpreter. That is the case for this design: the server owns the safety limits and the statistics, and a human checks the interpretation.
+So the agent is a reliable operator and a careless interpreter.
+
+**Batch of 10 runs** ([docs/batch-eval.md](docs/batch-eval.md)): photon order 1 and 2, five seeds each, scored automatically. The closing verdict matched the hidden truth in 9 of 10 runs (Wilson 95% interval 0.60 to 0.98); the miss ran out of its 40 rounds before concluding. The fitted exponent was within 3 sigma of the truth in 9 of 10, no run saturated the detector or was refused, 9 of 10 took a dark spectrum, and 6 of 10 closing texts contain sentences flagged for a human to check the physics. That is the case for this design: the server owns the safety limits and the statistics, and a human checks the interpretation.
 
 ## Tools
 
@@ -55,7 +57,7 @@ Safety: a power cap (default 200 mW, hardware max 500), integration and averagin
 ```
 python -m venv .venv
 .venv\Scripts\pip install -e .
-.venv\Scripts\python -m pytest            # 22 tests
+.venv\Scripts\python -m pytest            # 27 tests
 photonics-lab --tier full --data-dir data # stdio MCP server
 ```
 

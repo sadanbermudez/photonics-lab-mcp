@@ -1,0 +1,28 @@
+{"t": "2026-10-22T14:52:12", "action": "configure", "ok": true, "integration_ms": 5000.0, "averages": 5}
+{"t": "2026-10-22T14:52:15", "action": "arm", "ok": true}
+{"t": "2026-10-22T14:52:16", "action": "acquire", "ok": true, "run_id": "20261022-145216-8f9c0f", "label": "dark", "power_mw": 0.0, "integration_ms": 5000.0, "averages": 5, "max_counts": 5081.9, "saturated_pixels": 0}
+{"t": "2026-10-22T14:52:18", "action": "set_power", "ok": true, "power_mw": 10.0}
+{"t": "2026-10-22T14:52:19", "action": "emission", "ok": true, "on": true, "power_mw": 10.0}
+{"t": "2026-10-22T14:52:21", "action": "acquire", "ok": true, "run_id": "20261022-145221-f8acea", "label": "power_10mW", "power_mw": 10.0, "integration_ms": 5000.0, "averages": 5, "max_counts": 5218.1, "saturated_pixels": 0}
+{"t": "2026-10-22T14:52:23", "action": "set_power", "ok": true, "power_mw": 30.0}
+{"t": "2026-10-22T14:52:24", "action": "acquire", "ok": true, "run_id": "20261022-145224-001c84", "label": "power_30mW", "power_mw": 30.0, "integration_ms": 5000.0, "averages": 5, "max_counts": 6103.8, "saturated_pixels": 0}
+{"t": "2026-10-22T14:52:26", "action": "set_power", "ok": true, "power_mw": 50.0}
+{"t": "2026-10-22T14:52:27", "action": "acquire", "ok": true, "run_id": "20261022-145227-bd263f", "label": "power_50mW", "power_mw": 50.0, "integration_ms": 5000.0, "averages": 5, "max_counts": 7562.7, "saturated_pixels": 0}
+{"t": "2026-10-22T14:52:29", "action": "set_power", "ok": true, "power_mw": 80.0}
+{"t": "2026-10-22T14:52:30", "action": "acquire", "ok": true, "run_id": "20261022-145230-ed4bf3", "label": "power_80mW", "power_mw": 80.0, "integration_ms": 5000.0, "averages": 5, "max_counts": 11291.5, "saturated_pixels": 0}
+{"t": "2026-10-22T14:52:32", "action": "set_power", "ok": true, "power_mw": 120.0}
+{"t": "2026-10-22T14:52:33", "action": "acquire", "ok": true, "run_id": "20261022-145233-9027f5", "label": "power_120mW", "power_mw": 120.0, "integration_ms": 5000.0, "averages": 5, "max_counts": 18799.4, "saturated_pixels": 0}
+{"t": "2026-10-22T14:52:37", "action": "analyse_peak", "ok": true, "run_id": "20261022-145221-f8acea", "center_nm": 1269.46, "fwhm_nm": 13.79, "area_counts_nm": 1356.8, "snr": 5.7, "saturated": false}
+{"t": "2026-10-22T14:52:44", "action": "analyse_peak", "ok": true, "run_id": "20261022-145224-001c84", "center_nm": 1269.86, "fwhm_nm": 17.5, "area_counts_nm": 15229.1, "snr": 53.3, "saturated": false}
+{"t": "2026-10-22T14:52:44", "action": "analyse_peak", "ok": true, "run_id": "20261022-145227-bd263f", "center_nm": 1270.03, "fwhm_nm": 17.85, "area_counts_nm": 42920.5, "snr": 126.8, "saturated": false}
+{"t": "2026-10-22T14:52:44", "action": "analyse_peak", "ok": true, "run_id": "20261022-145230-ed4bf3", "center_nm": 1270.03, "fwhm_nm": 17.92, "area_counts_nm": 110231.2, "snr": 324.1, "saturated": false}
+{"t": "2026-10-22T14:52:44", "action": "analyse_peak", "ok": true, "run_id": "20261022-145233-9027f5", "center_nm": 1269.99, "fwhm_nm": 17.89, "area_counts_nm": 247817.5, "snr": 690.1, "saturated": false}
+{"t": "2026-10-22T14:52:50", "action": "analyse_peak", "ok": true, "run_id": "20261022-145221-f8acea", "center_nm": 1269.46, "fwhm_nm": 13.79, "area_counts_nm": 1356.8, "snr": 5.7, "saturated": false}
+{"t": "2026-10-22T14:52:50", "action": "analyse_peak", "ok": true, "run_id": "20261022-145224-001c84", "center_nm": 1269.86, "fwhm_nm": 17.5, "area_counts_nm": 15229.1, "snr": 53.3, "saturated": false}
+{"t": "2026-10-22T14:52:50", "action": "analyse_peak", "ok": true, "run_id": "20261022-145227-bd263f", "center_nm": 1270.03, "fwhm_nm": 17.85, "area_counts_nm": 42920.5, "snr": 126.8, "saturated": false}
+{"t": "2026-10-22T14:52:50", "action": "analyse_peak", "ok": true, "run_id": "20261022-145230-ed4bf3", "center_nm": 1270.03, "fwhm_nm": 17.92, "area_counts_nm": 110231.2, "snr": 324.1, "saturated": false}
+{"t": "2026-10-22T14:52:50", "action": "analyse_peak", "ok": true, "run_id": "20261022-145233-9027f5", "center_nm": 1269.99, "fwhm_nm": 17.89, "area_counts_nm": 247817.5, "snr": 690.1, "saturated": false}
+{"t": "2026-10-22T14:52:50", "action": "fit_power_dependence", "ok": true, "exponent": 2.003, "exponent_err": 0.005, "runs": 5, "excluded": []}
+{"t": "2026-10-22T14:52:54", "action": "emission", "ok": true, "on": false, "power_mw": 120.0}
+{"t": "2026-10-22T14:52:56", "action": "safe_state", "ok": true, "reason": "Experiment complete - power dependence measurement finished"}
+{"t": "2026-10-22T14:53:03", "action": "safe_state", "ok": true, "reason": "demo harness end"}

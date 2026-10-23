@@ -183,7 +183,7 @@ photonics-lab-mcp is an MCP server that lets an AI agent run a photophysics expe
 - **Single bench, single tier, no client identity.** The server holds one `Bench` and one tier for all clients; the HTTP secret path is not authentication.
 - **Notebook gaps.** Read-only calls and missing-run lookups are not logged, and the file is append-only by convention only.
 - **Partial saturation with averaging is not flagged**, as described in decision 7.
-- **Evaluation size.** Two agent runs on one local model (Qwen3.6-35B-A3B, Q4_K_M). A seeded batch of runs across orders and models would turn the demo into a measured success rate.
+- **Evaluation size.** Two published agent runs plus a batch of 10 seeded runs (`docs/batch-eval.md`), all on one local model (Qwen3.6-35B-A3B, Q4_K_M). Other models have not been run.
 - **Interpretation check.** The README proposes a second model or a rule set that reviews the agent's closing physics against the measured numbers.
 
 ## Questions a reviewer might ask

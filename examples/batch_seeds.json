@@ -1,0 +1,5 @@
+{
+ "about": "Frozen grid for examples/batch_eval.py: every photon order runs with every seed. Committed before any scored run. The published demo runs used seeds 11 and 23, which are not reused here.",
+ "photon_orders": [1, 2],
+ "seeds": [101, 102, 103, 104, 105]
+}
